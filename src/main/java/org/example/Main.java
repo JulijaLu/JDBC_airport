@@ -26,9 +26,8 @@ public class Main {
             System.out.println(airport3);
         }
 
-        Scanner s = new Scanner(System.in);
         System.out.println("Iveskite oro uosto ID, kuri norite rasti: ");
-        int id = s.nextInt();
+        id = s.nextInt();
         ArrayList<Airport> uostai = AirportDAO.read(id);
         if (uostai.isEmpty()) {
             System.out.println("Pagal ivesta ID rezultatu nerasta");
